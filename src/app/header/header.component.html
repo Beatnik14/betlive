@@ -3,11 +3,11 @@
     <li><img src="assets/logo.png" alt="betlive logo" class="logo p-2" /></li>
     <li>
       <div class="rounded-lg bg-gray p-2 lang-container">
-        <button type="button" class="block mb-3 not-selected">
+        <button type="button" class="block not-selected" [ngClass]="{'selected': selectedLang == 'KA', 'not-selected': selectedLang != 'KA'}" (click)="toggleLanguage('KA')">
           <img src="assets/ka.png" alt="georgian flag" class="flag" />
         </button>
 
-        <button type="button" class="block selected">
+        <button type="button" class="block selected" [ngClass]="{'selected': selectedLang == 'EN', 'not-selected': selectedLang != 'EN'}" (click)="toggleLanguage('EN')">
           <img src="assets/uk.png" alt="georgian flag" class="flag" />
         </button>
       </div>
