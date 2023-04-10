@@ -1,0 +1,75 @@
+.card {
+  width: 20rem;
+  height: 15rem;
+  background: linear-gradient(
+    35deg,
+    rgba(64, 42, 179, 1) 33%,
+    rgba(64, 42, 179, 1) 66%,
+    rgba(106, 23, 201, 1) 100%
+  );
+  position: relative;
+  .date {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    top: 0;
+    text-align: center;
+    background-color: white;
+    padding: 0.5rem 1rem;
+    min-width: 8rem;
+    font-weight: 600;
+  }
+
+  .percent {
+    background-color: #2b1251;
+    color: white;
+    font-size: 1.2rem;
+    position: relative;
+    max-width: 7rem;
+    padding: 1rem 1rem;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%, -50%);
+    div {
+      position: absolute;
+      bottom: -1rem;
+      right: -3.5rem;
+
+      .btn {
+        cursor: pointer;
+        svg {
+          background-color: white;
+        }
+      }
+      .btn-reject {
+        background-color: red;
+        font-weight: 600;
+        margin-left: 0.5rem;
+      }
+    }
+  }
+
+  .slider-container {
+    color: white;
+    width: 20rem;
+    .slider {
+      width: 14rem;
+      .indicator {
+        top: -2rem;
+        transform: translate(-50%, 0);
+        &::before {
+          content: "";
+          position: absolute;
+          bottom: -4px;
+          left: 50%;
+          transform: translateX(-50%);
+          width: 0;
+          height: 0;
+          border-left: 5px solid transparent;
+          border-right: 5px solid transparent;
+          border-top: 5px solid white;
+        }
+      }
+    }
+  }
+}

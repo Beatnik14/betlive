@@ -1,0 +1,19 @@
+<app-offer-header></app-offer-header>
+<ng-container *ngTemplateOutlet="btnTemplate"></ng-container>
+<app-offer-carousel></app-offer-carousel>
+<ng-container *ngTemplateOutlet="btnTemplate"></ng-container>
+<app-offer-rules></app-offer-rules>
+<ng-container *ngTemplateOutlet="btnTemplate"></ng-container>
+<app-offer-accordion></app-offer-accordion>
+
+<ng-template #btnTemplate>
+  <div>
+    <a
+      target="_blank"
+      href="https://www.betlive.com/en/home"
+      class="btn block rounded-md"
+    >
+      {{ "PlayBtn" | translate }}</a
+    >
+  </div>
+</ng-template>

@@ -1,0 +1,170 @@
+<div class="accordion flex flex-col gap-4">
+  <div>
+    <h2 class="rounded">
+      <button
+        type="button"
+        class="flex items-center justify-between w-full p-4"
+        (click)="selected == 1 ? (selected = 0) : (selected = 1)"
+      >
+        <span>{{ "Accordion.FirstHeader" | translate }}</span>
+        <svg
+          data-accordion-icon
+          class="w-8 h-8 shrink-0 rotate-180"
+          fill="currentColor"
+          viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg"
+          [ngClass]="{ 'rotate-180': selected == 1 }"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+            clip-rule="evenodd"
+          ></path>
+        </svg>
+      </button>
+    </h2>
+    <div class="accordion-txt" [ngClass]="{ hidden: selected != 1 }">
+      <div class="p-4">{{ "Accordion.FirstTxt" | translate }}</div>
+    </div>
+  </div>
+  <div>
+    <h2 class="rounded">
+      <button
+        type="button"
+        class="flex items-center justify-between w-full p-4"
+        (click)="selected == 2 ? (selected = 0) : (selected = 2)"
+      >
+        <span>{{ "Accordion.SeconsHeader" | translate }}</span>
+        <svg
+          data-accordion-icon
+          class="w-8 h-8 shrink-0"
+          fill="currentColor"
+          viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg"
+          [ngClass]="{ 'rotate-180': selected == 2 }"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+            clip-rule="evenodd"
+          ></path>
+        </svg>
+      </button>
+    </h2>
+    <div class="accordion-txt" [ngClass]="{ hidden: selected != 2 }">
+      <div class="p-4">{{ "Accordion.SecondTxt" | translate }}</div>
+    </div>
+  </div>
+  <div>
+    <h2 class="rounded">
+      <button
+        type="button"
+        class="flex items-center justify-between w-full p-4"
+        (click)="selected == 3 ? (selected = 0) : (selected = 3)"
+      >
+        <span>{{ "Accordion.ThirdHeader" | translate }}</span>
+        <svg
+          data-accordion-icon
+          class="w-8 h-8 shrink-0"
+          fill="currentColor"
+          viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg"
+          [ngClass]="{ 'rotate-180': selected == 3 }"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+            clip-rule="evenodd"
+          ></path>
+        </svg>
+      </button>
+    </h2>
+    <div class="accordion-txt" [ngClass]="{ hidden: selected != 3 }">
+      <div class="p-4">{{ "Accordion.ThirdTxt" | translate }}</div>
+    </div>
+  </div>
+  <div>
+    <h2 class="rounded">
+      <button
+        type="button"
+        class="flex items-center justify-between w-full p-4"
+        (click)="selected == 4 ? (selected = 0) : (selected = 4)"
+      >
+        <span>{{ "Accordion.FourthHeader" | translate }}</span>
+        <svg
+          data-accordion-icon
+          class="w-8 h-8 shrink-0"
+          fill="currentColor"
+          viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg"
+          [ngClass]="{ 'rotate-180': selected == 4 }"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+            clip-rule="evenodd"
+          ></path>
+        </svg>
+      </button>
+    </h2>
+    <div class="accordion-txt" [ngClass]="{ hidden: selected != 4 }">
+      <div class="p-4">{{ "Accordion.FourthTxt" | translate }}</div>
+    </div>
+  </div>
+  <div>
+    <h2 class="rounded">
+      <button
+        type="button"
+        class="flex items-center justify-between w-full p-4"
+        (click)="selected == 5 ? (selected = 0) : (selected = 5)"
+      >
+        <span>{{ "Accordion.FifthHeader" | translate }}</span>
+        <svg
+          data-accordion-icon
+          class="w-8 h-8 shrink-0"
+          fill="currentColor"
+          viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg"
+          [ngClass]="{ 'rotate-180': selected == 5 }"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+            clip-rule="evenodd"
+          ></path>
+        </svg>
+      </button>
+    </h2>
+    <div class="accordion-txt" [ngClass]="{ hidden: selected != 5 }">
+      <div class="p-4">{{ "Accordion.FifthTxt" | translate }}</div>
+    </div>
+  </div>
+  <div>
+    <h2 class="rounded">
+      <button
+        type="button"
+        class="flex items-center justify-between w-full p-4"
+        (click)="selected == 6 ? (selected = 0) : (selected = 6)"
+      >
+        <span>{{ "Accordion.SixthHeader" | translate }}</span>
+        <svg
+          data-accordion-icon
+          class="w-8 h-8 shrink-0"
+          fill="currentColor"
+          viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg"
+          [ngClass]="{ 'rotate-180': selected == 6 }"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+            clip-rule="evenodd"
+          ></path>
+        </svg>
+      </button>
+    </h2>
+    <div class="accordion-txt" [ngClass]="{ hidden: selected != 6 }">
+      <div class="p-4">{{ "Accordion.SixthTxt" | translate }}</div>
+    </div>
+  </div>
+</div>

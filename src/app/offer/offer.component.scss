@@ -1,0 +1,24 @@
+.btn {
+  color: white;
+  width: 10%;
+  text-align: center;
+  margin: 0 auto;
+  font-size: 1.2rem;
+  min-width: 7rem;
+
+  &:link,
+  &visited {
+    background-color: #ff1644;
+    padding: 0.7rem 1rem;
+    transition: all .2;
+  }
+  &:hover {
+    transform: translateY(-0.15rem);
+    box-shadow: 0 0.5rem 1rem rgba($color: #ffffff, $alpha: .2);
+  }
+  &:active {
+    transform: translateY(-0.1rem);
+    box-shadow: 0 0.3rem 0.7rem rgba($color: #ffffff, $alpha: .2);
+
+  }
+}

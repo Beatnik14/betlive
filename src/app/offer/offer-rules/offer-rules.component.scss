@@ -1,0 +1,155 @@
+.container {
+  img {
+    max-width: 85%;
+    margin: 0 auto;
+    max-height: 10rem;
+    position: relative;
+  }
+
+  .offer-wrapper {
+    text-align: center;
+    max-width: 65%;
+    margin: 0 auto;
+    width: 100%;
+    position: relative;
+    top: -0.1rem;
+
+    padding: 1rem 2rem 2rem 2rem;
+    background-color: rgba(255, 255, 255, 0.2);
+
+    .offer-header {
+      color: white;
+      p:first-child {
+        font-size: 1.5rem;
+        span {
+          color: #fdb936;
+        }
+        @media (max-width: 780px) {
+          font-size: 1rem;
+        }
+      }
+
+      p:nth-child(2) {
+        @media (max-width: 780px) {
+          font-size: 0.8rem;
+        }
+      }
+    }
+
+    .offer-body {
+      @media (max-width: 780px) {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+
+    @media (max-width: 1200px) {
+      padding: 1rem;
+    }
+  }
+
+  .slot-card {
+    width: 35%;
+    background-color: white;
+    color: #7c2dc5;
+    padding: 1rem;
+
+    div:first-child {
+      background-color: #ebebeb;
+      padding: 0.5rem;
+      font-weight: 500;
+    }
+
+    div:nth-child(2) {
+      font-size: 2.5rem;
+      font-weight: 700;
+      @media (max-width: 780px) {
+        font-size: 1.5rem;
+      }
+    }
+
+    @media (max-width: 1200px) {
+      width: 45%;
+    }
+
+    @media (max-width: 780px) {
+      width: 70%;
+    }
+
+    @media (max-width: 480px) {
+      width: 85%;
+    }
+  }
+
+  .equal {
+    text-align: center;
+    width: 10%;
+    color: white;
+    font-size: 5rem;
+    @media (max-width: 1200px) {
+      font-size: 3rem;
+      width: auto;
+    }
+  }
+
+  .cashback-card {
+    width: 35%;
+    color: white;
+    padding: 1rem;
+    background: linear-gradient(30deg, #462ec5 0%, #4c2ac6 35%, #6818c8 100%);
+    div:first-child {
+      font-size: 2rem;
+      @media (max-width: 780px) {
+        font-size: 1.5rem;
+      }
+    }
+    div:nth-child(2) {
+      background-color: #3f29b1;
+      padding: 0.5rem;
+      font-weight: 700;
+    }
+    @media (max-width: 1200px) {
+      width: 45%;
+    }
+
+    @media (max-width: 780px) {
+      width: 70%;
+    }
+
+    @media (max-width: 480px) {
+      width: 85%;
+    }
+  }
+  .offer-info {
+    color: white;
+    width: 75%;
+    margin: 3rem auto;
+    .info-logo {
+      width: 10%;
+      background-color: rgba(16, 8, 36, 0.4);
+      img {
+        max-width: 2rem;
+        max-height: 2rem;
+        @media (max-width: 780px) {
+          max-width: 1.5rem;
+          max-height: 1.5rem;
+        }
+      }
+      @media (max-width: 780px) {
+        width: 100%;
+        padding: 1rem;
+      }
+    }
+    .info-txt {
+      width: 80%;
+      background-color: rgba(34, 18, 60, 0.4);
+      padding: 2rem;
+      @media (max-width: 780px) {
+        width: 100%;
+      }
+    }
+    @media (max-width: 780px) {
+      flex-direction: column;
+    }
+  }
+}

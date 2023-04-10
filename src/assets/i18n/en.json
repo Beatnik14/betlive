@@ -1,0 +1,32 @@
+{
+  "Header": {
+    "Slots": "Play any slots",
+    "Cashback": "Increase your cashback by 40%",
+    "MoneyBack": "Get back money everyday"
+  },
+  "Rules": {
+    "HeaderPrimary": "Get ",
+    "HeaderGolden": " guaranteed 10%",
+    "HeaderPrimary2": "cashback",
+    "Header2": "and increase it by 1% daily!",
+    "Card1": "Played everyday",
+    "Card2": "Cashback",
+    "InfoHeader": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus provident eaque repudiandae quam fuga totam, sint maiores id obcaecati aperiam quibusdam tenetur? Dicta dignissimos aliquam veritatis, et libero enim nam.",
+    "InfoTxt": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus provident eaque repudiandae quam fuga totam, sint maiores id obcaecati aperiam quibusdam tenetur? Dicta dignissimos aliquam veritatis, et libero enim nam."
+  },
+  "PlayBtn": "Play",
+  "Accordion": {
+    "FirstHeader": "Lorem ipsum dolor sit amet adipisicing elit",
+    "FirstTxt": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus iure qui corporis saepe sit vel necessitatibus reprehenderit sunt quod fugit cupiditate, neque, eum quo natus, dolores facilis exercitationem in repellat.",
+    "SeconsHeader": "Lorem ipsum dolor sit amet adipisicing elit",
+    "SecondTxt": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus iure qui corporis saepe sit vel necessitatibus reprehenderit sunt quod fugit cupiditate, neque, eum quo natus, dolores facilis exercitationem in repellat.",
+    "ThirdHeader": "Lorem ipsum dolor sit amet adipisicing elit",
+    "ThirdTxt": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus iure qui corporis saepe sit vel necessitatibus reprehenderit sunt quod fugit cupiditate, neque, eum quo natus, dolores facilis exercitationem in repellat.",
+    "FourthHeader": "Lorem ipsum dolor sit amet adipisicing elit",
+    "FourthTxt": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus iure qui corporis saepe sit vel necessitatibus reprehenderit sunt quod fugit cupiditate, neque, eum quo natus, dolores facilis exercitationem in repellat.",
+    "FifthHeader": "Lorem ipsum dolor sit amet adipisicing elit",
+    "FifthTxt": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus iure qui corporis saepe sit vel necessitatibus reprehenderit sunt quod fugit cupiditate, neque, eum quo natus, dolores facilis exercitationem in repellat.",
+    "SixthHeader": "Lorem ipsum dolor sit amet adipisicing elit",
+    "SixthTxt": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus iure qui corporis saepe sit vel necessitatibus reprehenderit sunt quod fugit cupiditate, neque, eum quo natus, dolores facilis exercitationem in repellat."
+  }
+}

@@ -1,0 +1,14 @@
+<div class="carousel-container">
+  <div class="carousel-arrow left" (click)="onPrevClick()">&#8249;</div>
+  <div class="carousel-card-list">
+    <div *ngFor="let card of cards; let i = index"
+         class="carousel-card"
+         [class.center-card]="isCenterCard(i)"
+         [class.left-card]="isLeftCard(i)"
+         [class.right-card]="isRightCard(i)">
+         <app-carousel-card [card]="card"></app-carousel-card>
+
+    </div>
+  </div>
+  <div class="carousel-arrow right" (click)="onNextClick()">&#8250;</div>
+</div>
