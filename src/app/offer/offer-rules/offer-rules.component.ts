@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-offer-rules',
@@ -7,9 +8,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class OfferRulesComponent implements OnInit {
 
-  constructor() { }
-
+  title = this.translate.get('Rules.HeaderPrimary') ;
+  constructor(private translate: TranslateService) {}
   ngOnInit(): void {
+    console.log(this.title)
   }
 
 }

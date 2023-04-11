@@ -3,5 +3,6 @@
 @tailwind utilities;
 
 body {
-  background-image: url('./assets/bg.jpg');
+  background: url(./assets/bg.jpg) no-repeat;
+  background-size: cover;
 }

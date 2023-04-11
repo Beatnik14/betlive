@@ -1,48 +1,21 @@
 import { Component, OnInit } from '@angular/core';
 import { Card } from './card.model';
+import { OfferService } from '../offer.service';
 
 @Component({
   selector: 'app-offer-carousel',
   templateUrl: './offer-carousel.component.html',
-  styleUrls: ['./offer-carousel.component.scss']
+  styleUrls: ['./offer-carousel.component.scss'],
 })
 export class OfferCarouselComponent implements OnInit {
-  cards: Card[] = [
-    {
-      date: '14 მაისი',
-      percent: 14,
-      rangeFrom: 0,
-      rangeTo: 250,
-      completed: 80
-    },
-    {
-      date: '13 მაისი',
-      percent: 13,
-      rangeFrom: 0,
-      rangeTo: 150,
-      completed: 60
-    },
-    {
-      date: '15 მაისი',
-      percent: 15,
-      rangeFrom: 0,
-      rangeTo: 350,
-      completed: 45,
-    },
-    {
-      date: '16 მაისი',
-      percent: 16,
-      rangeFrom: 0,
-      rangeTo: 100,
-      completed: 33
-    },
-
-  ];
   focusedCardIndex = 0;
 
-  constructor() { }
+  cards: Card[] = [];
+
+  constructor(private offerService: OfferService) {}
 
   ngOnInit(): void {
+    this.cards = this.offerService.getCards();
   }
 
   onPrevClick(): void {
@@ -68,7 +41,9 @@ export class OfferCarouselComponent implements OnInit {
   }
 
   isRightCard(index: number): boolean {
-    return this.focusedCardIndex === (index + this.cards.length - 1) % this.cards.length;
+    return (
+      this.focusedCardIndex ===
+      (index + this.cards.length - 1) % this.cards.length
+    );
   }
-
 }

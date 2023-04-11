@@ -1,14 +1,19 @@
 <div class="carousel-container">
-  <div class="carousel-arrow left" (click)="onPrevClick()">&#8249;</div>
+  <div class="window"><img src="assets/window-left.png" alt="" /></div>
+  <div class="carousel-arrow left" (click)="onPrevClick()"><p>&#8249;</p></div>
   <div class="carousel-card-list">
-    <div *ngFor="let card of cards; let i = index"
-         class="carousel-card"
-         [class.center-card]="isCenterCard(i)"
-         [class.left-card]="isLeftCard(i)"
-         [class.right-card]="isRightCard(i)">
-         <app-carousel-card [card]="card"></app-carousel-card>
-
+    <div
+      *ngFor="let card of cards; let i = index"
+      class="carousel-card"
+      [class.center-card]="isCenterCard(i)"
+      [class.left-card]="isLeftCard(i)"
+      [class.right-card]="isRightCard(i)"
+    >
+      <app-carousel-card [card]="card"></app-carousel-card>
+      <div></div>
     </div>
   </div>
-  <div class="carousel-arrow right" (click)="onNextClick()">&#8250;</div>
+  <div class="carousel-arrow right" (click)="onNextClick()"><p>&#8250;</p></div>
+  <div class="window"><img src="assets/window-right.png" alt="" /></div>
+  <div class="window-bottom"><img src="assets/window-bottom.png" alt="" /></div>
 </div>

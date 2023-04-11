@@ -11,11 +11,9 @@ export class CarouselCardComponent implements OnInit {
 
   @Input() card: Card;
 
-  constructor() {
-  }
+  constructor() {}
 
   ngOnInit(): void {
     this.sliderValue = this.card?.completed;
-
   }
 }
